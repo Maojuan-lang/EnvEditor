@@ -184,7 +184,6 @@ def save_item_to_file(item):
         with open(ENV_FILE, "w", encoding="utf-8") as f:
             f.write("\n".join(lines) + "\n")
     if item['type'] == 5:
-        print(item)
         try:
             with open(ENV_FILE, "r", encoding="utf-8") as f:
                 lines = [ln.rstrip("\n") for ln in f]
@@ -415,4 +414,5 @@ def create_gui():
     root.mainloop()
 
 if __name__ == "__main__":
+
     create_gui()

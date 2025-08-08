@@ -241,6 +241,8 @@ def create_gui():
 
     # 如果没有解析到任何项，显示提示
     if not items:
+        frame = ttk.Frame()
+        frame.pack(padx=24, pady=6, fill="x")
         lbl = ttk.Label(frame, text="未解析到可编辑项（检查 env 格式）")
         lbl.pack(padx=10, pady=10)
     else:
@@ -416,4 +418,5 @@ def create_gui():
 if __name__ == "__main__":
 
     create_gui()
+
 

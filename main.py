@@ -2,7 +2,7 @@ import re
 import tkinter as tk
 from tkinter import ttk
 
-ENV_FILE = "1.env"  # 改成你的 env 路径
+ENV_FILE = "config.env"  # 改成你的 env 路径
 
 class ToolTip:
     """简单鼠标悬停提示"""
@@ -416,3 +416,4 @@ def create_gui():
 if __name__ == "__main__":
 
     create_gui()
+
